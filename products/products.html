@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Produtos</title>
+  <link rel="stylesheet" href="products.css">
+  
+</head>
+
+<body>
+
+  <div id="app">
+    <h1>Lista de Produtos</h1>
+
+    <form id="productForm">
+      <label for="title">Título:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="description">Descrição:</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <label for="price">Preço:</label>
+      <input type="number" id="price" name="price" step="0.01" required>
+
+      <label for="brand">Marca:</label>
+      <input type="text" id="brand" name="brand" required>
+
+      <label for="category">Categoria:</label>
+      <input type="text" id="category" name="category" required>
+
+      <label for="images">Fotos (URL):</label>
+      <input type="text" id="images" name="images" required> <br>
+
+      <button type="submit">Adicionar Produto</button>
+    </form>
+
+    <div style="display: flex; gap: 10px;">
+      <button><a href="../home/index.html" class="btn">Home</a></button>
+      <button><a href="../users/users.html" class="btn">Ir para Usuários</a></button>
+    </div>
+
+    <ul id="productList" class="grid-container">
+      <!-- Lista de produtos será inserida aqui -->
+    </ul>
+
+    <script src="productsScript.js"></script>
+  </div>
+
+</body>
+
+</html>
